@@ -24,14 +24,29 @@ class pageCon extends State<web_converter> {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Text(style: TextStyle(fontSize: 30), 'Temperature Converter'),
+          Text(style: TextStyle(fontSize: 35), 'Temperature Converter'),
           SizedBox(
-            height: 50,
+            height: 100,
           ),
           Container(
-            width: 1000,
+            width: 1400,
             height: 250,
-            color: Colors.grey,
+            decoration: BoxDecoration(
+              color: Colors.white,
+              border: Border.all(
+                width: 5.0,
+                color: Colors.teal,
+              ),
+              borderRadius: BorderRadius.circular(8.0),
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.grey.withOpacity(0.5),
+                  spreadRadius: 5,
+                  blurRadius: 7,
+                  offset: const Offset(0, 3),
+                ),
+              ],
+            ),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
@@ -172,9 +187,12 @@ class pageCon extends State<web_converter> {
             ),
           ),
           SizedBox(
-            height: 30,
+            height: 50,
           ),
-          Text('$_feedbackText'),
+          Text(
+            '$_feedbackText',
+            style: TextStyle(fontSize: 20),
+          ),
         ],
       )),
     );
