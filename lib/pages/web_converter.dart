@@ -31,6 +31,7 @@ class pageCon extends State<web_converter> {
           Container(
             width: 1400,
             height: 250,
+            padding: EdgeInsets.all(20.0),
             decoration: BoxDecoration(
               color: Colors.white,
               border: Border.all(
