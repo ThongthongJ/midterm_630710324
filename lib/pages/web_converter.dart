@@ -29,9 +29,10 @@ class pageCon extends State<web_converter> {
             height: 100,
           ),
           Container(
-            width: 1400,
+            width: 1500,
             height: 250,
             padding: EdgeInsets.all(20.0),
+            margin: const EdgeInsets.all(16.0),
             decoration: BoxDecoration(
               color: Colors.white,
               border: Border.all(
