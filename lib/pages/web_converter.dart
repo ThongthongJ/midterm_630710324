@@ -9,7 +9,7 @@ class web_converter extends StatefulWidget {
 class pageCon extends State<web_converter> {
   final _controller = TextEditingController();
   final _convert = converter();
-  var _feedbackText = 'Please enter a value to convert.';
+  var _feedbackText = '';
   var _temperature = 0.0;
   bool nonInfo = true;
 
@@ -29,8 +29,8 @@ class pageCon extends State<web_converter> {
             height: 100,
           ),
           Container(
-            width: 1500,
-            height: 250,
+            //width: 1500,
+           // height: 250,
             padding: EdgeInsets.all(20.0),
             margin: const EdgeInsets.all(16.0),
             decoration: BoxDecoration(
